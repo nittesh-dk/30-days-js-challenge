@@ -106,8 +106,4 @@ if (userLoggedIn) {
 //   Write a program that uses the ternary operator to check if a number is positive or negative and log the result to the console.
 let numberTocheckIsPositiveOrNegative = 10
 
-if (numberTocheckIsPositiveOrNegative % 2 == 0) {
-    console.log("the number is positive")
-} else {
-    console.log("the number is negative ")
-}
+  numberTocheckIsPositiveOrNegative% 2 == 0 ? console.log("number is positive") : console.log("number is negative")

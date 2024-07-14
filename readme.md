@@ -166,7 +166,8 @@ This repository contains solutions for the tasks and activities related to arith
 
 14. Write a program that uses the ternary operator to check if a number is positive or negative and log the result to the console.
     ```javascript
-    let numberToCheck = 10;
-    let result = numberToCheck > 0 ? "The number is positive" : "The number is negative";
-    console.log(result);
+    let numberTocheckIsPositiveOrNegative = 10
+
+  numberTocheckIsPositiveOrNegative% 2 == 0 ? console.log("number is positive") : console.log("number is negative")
+
     ```
