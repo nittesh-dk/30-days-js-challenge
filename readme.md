@@ -541,11 +541,9 @@ This repository contains solutions for the tasks and activities related to funct
     // value is passed to function one, the result of function one is passed to function two, and the result of function two is returned
     console.log(ans);
     ```
-```
 
-Here's the `README.md` file for Day 6 with all the questions and corresponding JavaScript code:
 
-```markdown
+
 # Day 6: Arrays
 
 This repository contains solutions for the tasks and activities related to arrays in JavaScript, including array creation, access, basic methods, intermediate methods, iteration, and multi-dimensional arrays.
@@ -654,4 +652,4 @@ This repository contains solutions for the tasks and activities related to array
     let spec = twoD[0][1];
     console.log(spec);
     ```
-```
+
