@@ -543,4 +543,115 @@ This repository contains solutions for the tasks and activities related to funct
     ```
 ```
 
-You can copy this markdown code into a `README.md` file and upload it to your GitHub repository.
+Here's the `README.md` file for Day 6 with all the questions and corresponding JavaScript code:
+
+```markdown
+# Day 6: Arrays
+
+This repository contains solutions for the tasks and activities related to arrays in JavaScript, including array creation, access, basic methods, intermediate methods, iteration, and multi-dimensional arrays.
+
+## Tasks/Activities
+
+### Activity 1: Array Creation and Access
+
+1. **Task 1:** 
+    Create an array of numbers from 1 to 5 and log the array to the console.
+    ```javascript
+    let num = [1, 2, 3, 4, 5];
+    console.log(num);
+    ```
+
+2. **Task 2:**
+    Access the first and last elements of the array and log them to the console.
+    ```javascript
+    console.log(num[0]);
+    console.log(num[num.length - 1]);
+    ```
+
+### Activity 2: Array Methods (Basic)
+
+3. **Task 3:** 
+    Use the push method to add a new number to the end of the array and log the updated array.
+    ```javascript
+    num.push(6);
+    console.log(num);
+    ```
+
+4. **Task 4:** 
+    Use the pop method to remove the last element from the array and log the updated array.
+    ```javascript
+    num.pop();
+    console.log(num);
+    ```
+
+5. **Task 5:** 
+    Use the shift method to remove the first element from the array and log the updated array.
+    ```javascript
+    num.shift();
+    console.log(num);
+    ```
+
+6. **Task 6:** 
+    Use the unshift method to add a new number to the beginning of the array and log the updated array.
+    ```javascript
+    num.unshift(23);
+    console.log(num);
+    ```
+
+### Activity 3: Array Methods (Intermediate)
+
+7. **Task 7:**
+    Use the map method to create a new array where each number is doubled and log the new array.
+    ```javascript
+    let mappedArray = num.map(el => el * 2);
+    console.log(mappedArray);
+    ```
+
+8. **Task 8:**
+    Use the filter method to create a new array with only even numbers and log the new array.
+    ```javascript
+    let filteredArray = num.filter(el => el % 2 == 0);
+    console.log(filteredArray);
+    ```
+
+9. **Task 9:** 
+    Use the reduce method to calculate the sum of all numbers in the array and log the result.
+    ```javascript
+    let sumOfElem = num.reduce((acc, val) => acc + val, 0);
+    console.log(sumOfElem);
+    ```
+
+### Activity 4: Array Iteration
+
+10. **Task 10:**
+    Use a for loop to iterate over the array and log each element to the console.
+    ```javascript
+    for (let i = 0; i < num.length; i++) {
+        console.log(num[i]);
+    }
+    ```
+
+11. **Task 11:**
+    Use the forEach method to iterate over the array and log each element to the console.
+    ```javascript
+    num.forEach(el => {
+        console.log(el);
+    });
+    ```
+
+### Activity 5: Multi-dimensional Arrays
+
+12. **Task 12:**
+    Create a two-dimensional array (matrix) and log the entire array to the console.
+    ```javascript
+    let twoD = [[2, 4], [4, 6], [6, 8]];
+    console.log(twoD);
+    ```
+
+13. **Task 13:**
+    Access and log a specific element from the two-dimensional array.
+    ```javascript
+    let spec = twoD[0][1];
+    console.log(spec);
+    ```
+```
