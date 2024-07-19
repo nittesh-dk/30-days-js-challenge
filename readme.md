@@ -653,3 +653,104 @@ This repository contains solutions for the tasks and activities related to array
     console.log(spec);
     ```
 
+# Day 7: Objects
+
+This repository contains solutions for tasks and activities related to objects in JavaScript, including object creation, access, methods, nested objects, the `this` keyword, and object iteration.
+
+## Tasks/Activities
+
+### Activity 1: Object Creation and Access
+
+1. **Task 1:** 
+    Create an object representing a book with properties like title, author, and year, and log the object to the console.
+    ```javascript
+    const book = {
+        title: "Rich Dad Poor Dad",
+        author: "Robert Kiyosaki",
+        year: 1986
+    };
+    console.log(book);
+    ```
+
+2. **Task 2:** 
+    Access and log the title and author properties of the book object.
+    ```javascript
+    console.log(book.title);
+    console.log(book["author"]);
+    ```
+
+### Activity 2: Object Methods
+
+3. **Task 3:** 
+    Add a method to the book object that returns a string with the book's title and author, and log the result of calling this method.
+    ```javascript
+    book.getDetails = function () {
+        return `The book ${this.title} is written by ${this.author}`;
+    };
+
+    let res = book.getDetails();
+    console.log(res);
+    ```
+
+4. **Task 4:** 
+    Add a method to the book object that takes a parameter (year) and updates the book's year property, then log the updated object.
+    ```javascript
+    book.setYear = function (year) {
+        this.year = year;
+    };
+
+    book.setYear(2005);
+    console.log(book);
+    ```
+
+### Activity 3: Nested Objects
+
+5. **Task 5:** 
+    Create a nested object representing a library with properties like name and books (an array of book objects), and log the library object to the console.
+    ```javascript
+    let library = {
+        name: "R.K Library SC",
+        books: ["PDPD", "Bible Of JS", "PP the Future Language"]
+    };
+
+    console.log(library);
+    ```
+
+6. **Task 6:** 
+    Access and log the name of the library and the titles of all the books in the library.
+    ```javascript
+    console.log(library.name);
+    library.books.forEach((book) => {
+        console.log(book);
+    });
+    ```
+
+### Activity 4: The `this` Keyword
+
+7. **Task 7:** 
+    Add a method to the book object that uses the `this` keyword to return a string with the book's title and year, and log the result of calling this method.
+    ```javascript
+    book.getDetails = function () {
+        return `The book ${this.title} was published in ${this.year}`;
+    };
+
+    let res2 = book.getDetails();
+    console.log(res2);
+    ```
+
+### Activity 5: Object Iteration
+
+8. **Task 8:** 
+    Use a `for...in` loop to iterate over the properties of the book object and log each property and its value.
+    ```javascript
+    for (const key in book) {
+        console.log(key, book[key]);
+    }
+    ```
+
+9. **Task 9:** 
+    Use `Object.keys` and `Object.values` methods to log all the keys and values of the book object.
+    ```javascript
+    console.log(Object.keys(book));
+    console.log(Object.values(book));
+    ```
