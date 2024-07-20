@@ -756,9 +756,9 @@ This repository contains solutions for tasks and activities related to objects i
     ```
 
 
-Here’s the `README.md` file for Day 8 with all the tasks and corresponding JavaScript code:
 
-```markdown
+
+
 # Day 8: Modern JavaScript Features
 
 This repository contains solutions for tasks and activities related to modern JavaScript features, including template literals, destructuring, spread and rest operators, default parameters, and enhanced object literals.
