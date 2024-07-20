@@ -540,7 +540,7 @@ This repository contains solutions for the tasks and activities related to funct
     let ans = allHOF(x => x * 2, x => x + 2, 2);
     // value is passed to function one, the result of function one is passed to function two, and the result of function two is returned
     console.log(ans);
-    ```
+ 
 
 
 
@@ -885,4 +885,4 @@ This repository contains solutions for tasks and activities related to modern Ja
 
     console.log(obj2);
     ```
-```
+
