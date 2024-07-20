@@ -754,3 +754,135 @@ This repository contains solutions for tasks and activities related to objects i
     console.log(Object.keys(book));
     console.log(Object.values(book));
     ```
+
+
+Here’s the `README.md` file for Day 8 with all the tasks and corresponding JavaScript code:
+
+```markdown
+# Day 8: Modern JavaScript Features
+
+This repository contains solutions for tasks and activities related to modern JavaScript features, including template literals, destructuring, spread and rest operators, default parameters, and enhanced object literals.
+
+## Tasks/Activities
+
+### Activity 1: Template Literals
+
+1. **Task 1:** 
+    Use template literals to create a string that includes variables for a person's name and age, and log the string to the console.
+    ```javascript
+    let details = {
+        name: 'John',
+        age: 20
+    };
+
+    console.log(`${details.name} and age is ${details.age}`);
+    ```
+
+2. **Task 2:** 
+    Create a multi-line string using template literals and log it to the console.
+    ```javascript
+    let book = 'the dominance';
+    let book2 = 'the patience';
+
+    let str = `this is the first ${book}
+    use for doing the mastery on self-control and ${book2}`;
+
+    console.log(str);
+    ```
+
+### Activity 2: Destructuring
+
+3. **Task 3:** 
+    Use array destructuring to extract the first and second elements from an array of numbers and log them to the console.
+    ```javascript
+    let num = [1, 2, 3];
+
+    let [a, b] = num;
+
+    console.log(a, b);
+    ```
+
+4. **Task 4:** 
+    Use object destructuring to extract the title and author from a book object and log them to the console.
+    ```javascript
+    let bookNK = {
+        name: 'nitesh the official js',
+        author: 'nitesh-dk'
+    };
+
+    let { name, author } = bookNK;
+    console.log(name, author);
+    ```
+
+### Activity 3: Spread and Rest Operators
+
+5. **Task 5:** 
+    Use the spread operator to create a new array that includes all elements of an existing array plus additional elements, and log the new array to the console.
+    ```javascript
+    let num1 = [1, 2, 4, 5, 6, 7];
+    let num2 = [8, 9, 10, 11, 12, 13, 14, 15];
+
+    let combinedArray = [...num1, ...num2];
+
+    console.log(combinedArray);
+    ```
+
+6. **Task 6:** 
+    Use the rest operator in a function to accept an arbitrary number of arguments, sum them, and return the result.
+    ```javascript
+    function sumOfAll(a, ...b) {
+        return a + b.reduce((acc, el) => acc + el);
+    }
+
+    const res = sumOfAll(1, 2, 3, 4, 5);
+    console.log(res);
+    ```
+
+### Activity 4: Default Parameters
+
+7. **Task 7:** 
+    Write a function that takes two parameters and returns their product, with the second parameter having a default value of 1. Log the result of calling this function with and without the second parameter.
+    ```javascript
+    function product(a, b = 1) {
+        return a * b;
+    }
+
+    let res2 = product(2);
+    let res4 = product(2, 5);
+
+    console.log(res2);
+    console.log(res4);
+    ```
+
+### Activity 5: Enhanced Object Literals
+
+8. **Task 8:** 
+    Use enhanced object literals to create an object with methods and properties, and log the object to the console.
+    ```javascript
+    let obj = {
+        name: "John",
+        age: 30,
+        greet() {
+            return "Hello, " + this.name;
+        }
+    };
+
+    console.log(obj);
+    console.log(obj.greet());
+    ```
+
+9. **Task 9:** 
+    Create an object with computed property names based on variables and log the object to the console.
+    ```javascript
+    let key1 = "name";
+    let key2 = "age";
+    let value1 = "John";
+    let value2 = 30;
+    let obj2 = {
+        [key1]: value1,
+        [key2]: value2
+    };
+
+    console.log(obj2);
+    ```
+```
