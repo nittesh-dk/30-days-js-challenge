@@ -886,3 +886,97 @@ This repository contains solutions for tasks and activities related to modern Ja
     console.log(obj2);
     ```
 
+# Day 9: DOM Manipulation Questions
+
+This repository contains solutions for tasks and activities related to DOM manipulation, including selecting and manipulating elements, creating and appending elements, removing elements, modifying attributes and classes, and event handling.
+
+## Tasks/Activities
+
+### Activity 1: Selecting and Manipulating Elements
+
+1. **Task 1:** 
+    How do you select an HTML element by its ID and change its text content?
+    ```javascript
+    let p = document.getElementById("para");
+    console.log(p);
+    p.style.color = 'red';
+    ```
+
+2. **Task 2:** 
+    How do you select an HTML element by its class and change its background color?
+    ```javascript
+    let paraSelectedByClass = document.getElementsByClassName('paraClass');
+    // By using class selector we get an HTML collection in the form of an array
+    paraSelectedByClass[0].style.color = "blue";
+    ```
+
+### Activity 2: Creating and Appending Elements
+
+3. **Task 3:** 
+    How do you create a new div element with some text content and append it to the body?
+    ```javascript
+    let div = document.createElement('div');
+    div.innerText = 'Hello, this div is created by JavaScript';
+    div.style.color = 'green';
+    document.querySelector('body').appendChild(div);
+    ```
+
+4. **Task 4:** 
+    How do you create a new li element and add it to an existing ul list?
+    ```javascript
+    let li = document.createElement('li');
+    li.innerText = 'Chickuu';
+    document.querySelector('ul').appendChild(li);
+    ```
+
+### Activity 3: Removing Elements
+
+5. **Task 5:** 
+    How do you select an HTML element and remove it from the DOM?
+    ```javascript
+    document.querySelector('p').remove();
+    ```
+
+6. **Task 6:** 
+    How do you remove the last child of a specific HTML element?
+    ```javascript
+    document.querySelector('ul').lastChild.remove();
+    ```
+
+### Activity 4: Modifying Attributes and Classes
+
+7. **Task 7:** 
+    How do you select an HTML element and change one of its attributes (e.g., src of an img tag)?
+    ```javascript
+    document.querySelector('img').setAttribute('src', 'https://tse4.mm.bing.net/th?id=OIP.5eNmhCpnF-Iz48d9mQUg6wHaI9&pid=Api&P=0&h=180');
+    ```
+
+8. **Task 8:** 
+    How do you add and remove a CSS class to/from an HTML element?
+    ```javascript
+    document.querySelector('.headingxl').classList.add('theheadingWhichisxl');
+    document.querySelector('.headingxl').classList.remove('headingxl');
+
+    let res = document.querySelector('.theheadingWhichisxl').classList.contains('headingxl');
+    console.log(res);
+    ```
+
+### Activity 5: Event Handling
+
+9. **Task 9:** 
+    How do you add a click event listener to a button that changes the text content of a paragraph?
+    ```javascript
+    document.querySelector('.changeText').addEventListener('click', function() {
+        this.innerText = "This is changed via click event";
+    });
+    ```
+
+10. **Task 10:** 
+    How do you add a mouseover event listener to an element that changes its border color?
+    ```javascript
+    document.querySelector('.heading').addEventListener('mouseover', function() {
+        this.style.borderWidth = '2px';
+        this.style.borderStyle = 'solid';
+        this.style.borderColor = 'red';
+    });
+    ```
