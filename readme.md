@@ -888,7 +888,6 @@ This repository contains solutions for tasks and activities related to modern Ja
 
 # Day 9: DOM Manipulation Questions
 
-This repository contains solutions for tasks and activities related to DOM manipulation, including selecting and manipulating elements, creating and appending elements, removing elements, modifying attributes and classes, and event handling.
 
 ## Tasks/Activities
 
@@ -978,5 +977,116 @@ This repository contains solutions for tasks and activities related to DOM manip
         this.style.borderWidth = '2px';
         this.style.borderStyle = 'solid';
         this.style.borderColor = 'red';
+    });
+    ```
+
+# DOM Manipulation: Event Handling
+
+This repository contains solutions for tasks and activities related to basic event handling, mouse events, keyboard events, form events, and event delegation.
+
+## Tasks/Activities
+
+### Activity 1: Basic Event Handling
+
+1. **Task 1:**
+    Add a click event listener to a button that changes the text content of a paragraph.
+    ```javascript
+    document.querySelector('button').addEventListener('click', () => {
+        document.querySelector('p').style.color = 'red';
+    });
+    ```
+
+2. **Task 2:**
+    Add a double-click event listener to an image that toggles its visibility.
+    ```javascript
+    let toggell = true;
+    const imgElement = document.querySelector('img');
+
+    imgElement.addEventListener('dblclick', () => {
+        if (toggell) {
+            imgElement.style.opacity = 0;
+        } else {
+            imgElement.style.opacity = 1;
+        }
+        toggell = !toggell; // Update toggell here
+    });
+    ```
+
+### Activity 2: Mouse Events
+
+3. **Task 3:**
+    Add a mouseover event listener to an element that changes its background color.
+    ```javascript
+    document.querySelector('h1').addEventListener('mouseover', function() {
+        this.style.backgroundColor = 'blue';
+    });
+    ```
+
+4. **Task 4:**
+    Add a mouseout event listener to an element that resets its background color.
+    ```javascript
+    document.querySelector('h1').addEventListener('mouseout', function() {
+        this.style.backgroundColor = '';
+    });
+    ```
+
+### Activity 3: Keyboard Events
+
+5. **Task 5:**
+    Add a keydown event listener to an input field that logs the key pressed to the console.
+    ```javascript
+    document.querySelector('input').addEventListener('keydown', function() {
+        console.log(this.value);
+        this.value = '';
+    });
+    ```
+
+6. **Task 6:**
+    Add a keyup event listener to an input field that displays the current value in a paragraph.
+    ```javascript
+    document.querySelector('input').addEventListener('keyup', function() {
+        document.querySelector('p').innerText = this.value;
+    });
+    ```
+
+### Activity 4: Form Events
+
+7. **Task 7:**
+    Add a submit event listener to a form that prevents the default submission and logs the form data to the console.
+    ```javascript
+    document.querySelector('#myform').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = new FormData(e.target);
+        console.log(data);
+    });
+    ```
+
+8. **Task 8:**
+    Add a change event listener to a select dropdown that displays the selected value in a paragraph.
+    ```javascript
+    document.querySelector('#mySelect').addEventListener('change', (e) => {
+        document.querySelector('#selectedValue').textContent = `Selected value: ${e.target.value}`;
+    });
+    ```
+
+### Activity 5: Event Delegation
+
+9. **Task 9:**
+    Add a click event listener to a list that logs the text content of the clicked list item using event delegation.
+    ```javascript
+    document.querySelector('#myList').addEventListener('click', (e) => {
+        if (e.target && e.target.nodeName === 'LI') {
+            console.log(e.target.textContent);
+        }
+    });
+    ```
+
+10. **Task 10:**
+    Add an event listener to a parent element that listens for events from dynamically added child elements.
+    ```javascript
+    document.querySelector('#parentElement').addEventListener('click', (e) => {
+        if (e.target && e.target.classList.contains('childElementClass')) {
+            console.log('Clicked on a dynamically added child element');
+        }
     });
     ```
